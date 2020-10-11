@@ -22,8 +22,8 @@ Output
   "log": "2015/05/05 19:54:41 \n",
   "stream": "stderr",
   "docker": {
-    "id": "df14e0d5ae4c07284fa636d739c8fc2e6b52bc344658de7d3f08c36a2e804115",
-  }
+    "id": "df14e0d5ae4c07284fa636d739c8fc2e6b52bc344658de7d3f08c36a2e804115"
+  },
   "kubernetes": {
     "pod_name":"my-app-98rqc",
     "container_name": "main",
@@ -62,7 +62,7 @@ Usage
 
 <match **>
   @type stdout
-  # statsd Statsd.new # optional, where to send stats via `.increment` calls
+  # statsd StatsdDelegator # optional, where to send stats via `.increment` calls (top level class names only)
 </match>
 ```
 
